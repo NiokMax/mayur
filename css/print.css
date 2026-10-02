@@ -1,0 +1,119 @@
+/* ==========================================================================
+   MAYUR BIKASH GOGOI - PRINT STYLESHEET
+   Optimized for high-quality resume printing & PDF export
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html, body {
+    font-size: 11pt;
+    line-height: 1.4;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hide interactive, non-resume chrome */
+  .site-header,
+  .site-footer,
+  .loading-screen,
+  .custom-cursor-dot,
+  .custom-cursor-ring,
+  .back-to-top,
+  .theme-toggle-btn,
+  .mobile-menu-btn,
+  .btn,
+  .project-filters,
+  .contact-form-card,
+  .lightbox-modal,
+  .modal-overlay,
+  .role-ticker {
+    display: none !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .section {
+    padding: 12pt 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .section-tag {
+    color: #333333 !important;
+    font-size: 9pt !important;
+  }
+
+  .section-tag::before {
+    display: none !important;
+  }
+
+  .section-title {
+    font-size: 16pt !important;
+    margin-bottom: 8pt !important;
+    border-bottom: 1pt solid #cccccc;
+    padding-bottom: 4pt;
+  }
+
+  .timeline {
+    padding-left: 0 !important;
+  }
+
+  .timeline::before,
+  .timeline-dot {
+    display: none !important;
+  }
+
+  .timeline-card,
+  .highlight-card,
+  .about-details-card,
+  .skill-category-card,
+  .project-card {
+    border: none !important;
+    padding: 6pt 0 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  .skill-badge {
+    border: 1pt solid #dddddd !important;
+    padding: 3pt 6pt !important;
+    font-size: 9pt !important;
+  }
+
+  .print-header {
+    display: block !important;
+    margin-bottom: 16pt;
+    border-bottom: 2pt solid #000000;
+    padding-bottom: 10pt;
+  }
+
+  .print-name {
+    font-size: 22pt;
+    font-weight: 800;
+    margin-bottom: 4pt;
+  }
+
+  .print-meta {
+    font-size: 10pt;
+    color: #444444 !important;
+  }
+
+  /* Page break utilities */
+  .page-break {
+    page-break-before: always;
+  }
+}

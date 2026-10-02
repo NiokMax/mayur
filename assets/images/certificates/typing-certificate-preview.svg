@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8f9fa"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a75d3"/>
+      <stop offset="50%" stop-color="#1952a5"/>
+      <stop offset="100%" stop-color="#0d3570"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#aa8214"/>
+      <stop offset="100%" stop-color="#805d00"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Card Frame with subtle shadow -->
+  <rect x="20" y="20" width="960" height="660" rx="16" fill="url(#bgGrad)" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- Ornate Certificate Double Borders -->
+  <rect x="36" y="36" width="928" height="628" rx="10" fill="none" stroke="url(#borderGrad)" stroke-width="4"/>
+  <rect x="46" y="46" width="908" height="608" rx="6" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Corner Ornamental Accents -->
+  <path d="M 52 76 L 76 52 M 52 52 L 86 52 M 52 52 L 52 86" stroke="url(#goldGrad)" stroke-width="2" fill="none"/>
+  <path d="M 948 76 L 924 52 M 948 52 L 914 52 M 948 52 L 948 86" stroke="url(#goldGrad)" stroke-width="2" fill="none"/>
+  <path d="M 52 624 L 76 648 M 52 648 L 86 648 M 52 648 L 52 614" stroke="url(#goldGrad)" stroke-width="2" fill="none"/>
+  <path d="M 948 624 L 924 648 M 948 648 L 914 648 M 948 648 L 948 614" stroke="url(#goldGrad)" stroke-width="2" fill="none"/>
+
+  <!-- Typing.com Header Brand -->
+  <g transform="translate(420, 80)">
+    <!-- Keyboard Key Icon -->
+    <rect x="-42" y="2" width="34" height="28" rx="6" fill="#2a75d3"/>
+    <path d="M -34 16 L -16 16 M -25 9 L -25 23" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <!-- Brand Text -->
+    <text x="4" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="900" fill="#1e293b" letter-spacing="-0.5">typing<tspan fill="#2a75d3">.com</tspan></text>
+  </g>
+
+  <!-- Certificate Subtitle -->
+  <text x="500" y="160" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="4" fill="#64748b" text-transform="uppercase">Certificate of Achievement</text>
+
+  <!-- Main Certificate Title -->
+  <text x="500" y="205" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="bold" fill="#0f172a" letter-spacing="1">1 MINUTE TYPING TEST</text>
+  <line x1="380" y1="222" x2="620" y2="222" stroke="url(#goldGrad)" stroke-width="2"/>
+
+  <!-- Recipient Lead-in -->
+  <text x="500" y="260" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" fill="#64748b">This official certificate is proudly presented to</text>
+
+  <!-- Recipient Name -->
+  <text x="500" y="325" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="bold" fill="#1e3a8a" letter-spacing="0.5">mayur bikash</text>
+  <line x1="280" y1="345" x2="720" y2="345" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Achievement Description -->
+  <text x="500" y="380" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#334155">
+    for demonstrating high-speed keyboard proficiency and exceptional typing precision
+  </text>
+
+  <!-- Metric Badges (108 WPM & 99% Accuracy) -->
+  <g transform="translate(500, 470)">
+    <!-- WPM Box -->
+    <g transform="translate(-160, 0)">
+      <rect x="-110" y="-55" width="220" height="90" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+      <text x="0" y="-8" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="900" fill="#1d4ed8">108</text>
+      <text x="0" y="22" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#3b82f6" letter-spacing="2">WORDS PER MINUTE</text>
+    </g>
+
+    <!-- Accuracy Box -->
+    <g transform="translate(160, 0)">
+      <rect x="-110" y="-55" width="220" height="90" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+      <text x="0" y="-8" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="900" fill="#15803d">99%</text>
+      <text x="0" y="22" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#16a34a" letter-spacing="2">ACCURACY</text>
+    </g>
+  </g>
+
+  <!-- Footer Elements: Date and Verified Ribbon Seal -->
+  <!-- Left: Date -->
+  <g transform="translate(160, 595)">
+    <line x1="0" y1="0" x2="200" y2="0" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="100" y="22" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#0f172a">October 2, 2026</text>
+    <text x="100" y="38" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b" letter-spacing="1">DATE ISSUED</text>
+  </g>
+
+  <!-- Center: Golden Seal Badge -->
+  <g transform="translate(500, 585)">
+    <circle cx="0" cy="0" r="38" fill="url(#goldGrad)" filter="url(#shadow)"/>
+    <circle cx="0" cy="0" r="33" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="29" fill="url(#goldGrad)"/>
+    <path d="M -12 18 L -18 42 L -6 36 L 0 42 L 6 36 L 18 42 L 12 18 Z" fill="#aa8214"/>
+    <text x="0" y="-4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" fill="#ffffff" letter-spacing="0.5">OFFICIAL</text>
+    <text x="0" y="8" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="800" fill="#ffffff" letter-spacing="0.5">VERIFIED</text>
+  </g>
+
+  <!-- Right: Verification Provider -->
+  <g transform="translate(640, 595)">
+    <line x1="0" y1="0" x2="200" y2="0" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="100" y="22" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#0f172a">Typing.com Verification</text>
+    <text x="100" y="38" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b" letter-spacing="1">AUTHENTIC ASSESSMENT</text>
+  </g>
+</svg>

@@ -1,0 +1,246 @@
+/* ==========================================================================
+   MAYUR BIKASH GOGOI - RESPONSIVE & MOBILE NAVIGATION
+   60fps smooth mobile layout, no jitter, elegant mobile drawer
+   ========================================================================== */
+
+/* Tablet & Medium Screens (max-width: 960px) */
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 36px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 62px;
+  }
+
+  .section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .section-title {
+    font-size: 1.875rem;
+  }
+
+  .hero-section {
+    padding-top: 36px;
+    padding-bottom: 52px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-photo-wrapper {
+    order: -1;
+  }
+
+  .hero-photo-card {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .hero-headline {
+    font-size: 2.25rem;
+  }
+
+  /* Sleek, Fast Mobile Menu */
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--nav-border);
+    padding: 16px 20px 24px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, -12px, 0);
+    transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+    will-change: transform, opacity;
+  }
+
+  .nav-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 11px 14px;
+    width: 100%;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-link:hover {
+    color: var(--text-primary);
+    background-color: var(--surface-alt);
+  }
+
+  .nav-link.active {
+    background-color: var(--surface-alt);
+    color: var(--text-primary);
+    border-left: 3px solid var(--text-primary);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-item.dropdown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    padding: 2px 0 6px 14px;
+    margin: 2px 0 6px;
+    border-left: 2px solid var(--surface-border);
+  }
+
+  .dropdown-chevron {
+    display: none;
+  }
+
+  .dropdown-link {
+    padding: 9px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-radius: var(--radius-sm);
+  }
+
+  .announcement-bar {
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    padding-right: 32px;
+  }
+
+  .skills-container,
+  .projects-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* Small Smartphone (max-width: 500px) */
+@media (max-width: 500px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-headline {
+    font-size: 1.95rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+
+  .highlight-card {
+    padding: 18px;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 22px 18px;
+  }
+}

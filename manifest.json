@@ -1,0 +1,23 @@
+{
+  "name": "Mayur Bikash Gogoi (MBG)",
+  "short_name": "MBG",
+  "description": "Official portfolio of Mayur Bikash Gogoi (MBG) from Assam, India. Full-stack developer, freelancer, copywriter, AI prompt engineer, social media manager, and founder of Loopni.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F6",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/branding/mbg-avatar.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
